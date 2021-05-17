@@ -1,0 +1,89 @@
+html {
+    font-size: 10px;
+    
+  }
+  body {
+    min-width: 320px;
+    line-height: 1.6;
+    font-family: 'Noto Sans KR', sans-serif;
+  }
+
+.name {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    font-size: 1rem;
+    background-color: lightgray;
+}
+
+.form {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    font-size: 1.7rem;
+    
+}
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    margin: 15px 0 5px 0;
+    color: #535E81;
+}
+h2 {
+    
+    margin: 15px 0 5px 0;
+    
+}
+form {
+    margin: 5px 0 ;
+    display: block;
+}
+
+label {
+    display: inline-block;
+    width: 15%;
+    height: 35px;
+    vertical-align: bottom;
+    
+}
+input {
+    display: inline-block;
+    width: 67%;
+    
+  border: 1px solid #97A1BD;
+  border-radius: 4px;
+  height: 2rem;
+  padding: 5px;
+  vertical-align: bottom;
+  
+}
+input:focus {
+    outline: 0;
+    box-shadow: 0 0 5px #AEC3FA;
+}
+button {
+    display: inline-block;
+    background-color: lightblue;
+    color: navy;
+    border-radius: 4px;
+    height: 3.2rem;
+    border: 1px solid #9fa7bb;
+    width: 10%;
+    font-size: 1.5rem;
+    vertical-align: bottom;
+    margin-left: 4px;
+}
+button:hover {
+    background-color: #A6B5DD;
+    color: black;
+}
+img {
+    display: inline-block;
+    width: 90%;
+    height: 90%;
+  
+}
+p {
+    color: grey;
+    text-align: center;
+}

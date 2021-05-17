@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>의약정보 통합 검색 (Public ver)</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">  
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <h1>의약정보 통합 검색 (public version)</h1>
+  <div class="name">
+    <h2>약물정보검색</h2>
+  </div>
+  <div class="form">
+   
+    <form action="https://nedrug.mfds.go.kr/searchDrug" method="GET" target="_blank" autocomplete="off">
+      <label for="mfds1"><img src="./logo/mfds.PNG" title="우리나라 식약처 허가사항을 정확하게 확인할 수 있다."></label>
+      <input type="text" name="itemName" placeholder="한글로 입력: 상품명만">
+      <button type="submit">검색</button>
+    </form>
+
+    <form action="https://nedrug.mfds.go.kr/searchDrug" method="GET" target="_blank" autocomplete="off">
+      <label for="mfds2"><img src="./logo/mfds.PNG" title="우리나라 식약처 허가사항을 정확하게 확인할 수 있다."></label>
+      <input type="text" name="ingrName1" placeholder="한글로 입력: 성분명만">
+      <button type="submit">검색</button>
+    </form>
+
+    <form action="https://www.kimsonline.co.kr/drugcenter/search/totalSearch" method="GET" target="_blank" autocomplete="off">
+      <label for="kimsonline"><img src="./logo/kimsonline.PNG"></label>
+      <input type="text" name="Keyword" placeholder="영문, 한글 가능">
+      <button type="submit">검색</button>
+    </form>
+
+    <form action="https://www.drugs.com/search.php" method="GET" target="_blank" autocomplete="off">
+      <label for="drugs"><img src="./logo/drugscom.png" title="미국의 킴스온라인 같은 것. ASHP, FDA의 정보도 연동되어 있다. 질환도 검색 가능"></label>
+      <input type="text" name="searchterm" placeholder="영문만 가능">
+      <button type="submit">검색</button>
+    </form>
+  </div>
+
+  <div class="name">
+    <h2>문헌검색</h2>
+  </div>
+  <div class="form">
+    <form action="https://pubmed.ncbi.nlm.nih.gov/" method="GET" target="_blank" autocomplete="off">
+      <label for="pubmed"><img src="./logo/pubmed.svg" title="논문을 검색한다."></label>
+      <input id="pubmed" type="text" name="term" placeholder="영문만 가능">
+      <button type="submit">검색</button>
+    </form>
+    <form action="https://scholar.google.com/scholar" method="GET" target="_blank"  autocomplete="off">
+      <label for="scholar"><img src="./logo/scholar.png" title="논문과 책자를 검색한다."></label>
+      <input type="text" name="q" placeholder="영문, 한글 가능">
+      <button type="submit">검색</button>
+    </form>
+  </div>
+
+  <div class="name">
+    <h2>통합검색</h2>
+  </div>
+  <div class="form">
+    <form action="https://www.uptodate.com/contents/search" method="GET" target="_blank" autocomplete="off">
+      <label for="UpToDate"><img src="./logo/uptodate.png" title="질환, 최신 치료법 등에 대해 전문적으로 정리되어 있다."></label>
+      <input type="text" name="search" placeholder="원내망에서만 바로 연결 가능">
+      <button type="submit">검색</button>
+    </form>
+
+    <form action="https://search.medscape.com/search/" method="GET" target="_blank" autocomplete="off">
+      <label for="Medscape"><img src="./logo/medscape.png" title="미국의 의학 잡지 같은 것. 질환, 약물, 의약학뉴스 검색 가능"></label>
+      <input type="text" name="q" placeholder="검색 후 로그인 필요">
+      <button type="submit">검색</button>
+    </form>
+
+    <form action="http://www.kmle.co.kr/search.php" method="GET" target="_blank" autocomplete="off">
+      <label for="KMLE"><img src="./logo/kmle.png" title="우리나라에서 만든 의학용어 검색사이트"></label>
+      <input type="text" name="Search" placeholder="의학용어">
+      <button type="submit">검색</button>
+    </form>
+  </div>
+  </div>
+  <p><br>데이터베이스 이름에 커서를 대면 간단한 설명을 볼 수 있습니다.
+    <br>Copyright 2021. LEE YJ all rights reserved. 
+    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeIp4VFpR8ie64N8fKlfpLLQI20Yat_fQ-O2KiYOe8q_4xTig/viewform?usp=sf_link" target="_blank">의견함 바로가기</a></p>
+</body>
+
+</html>
